@@ -1,8 +1,12 @@
 /*
- * Topic :- Constructor injection  
+ * Topic :-Autowire 
  * 
- * setter injection simply means when we use property other wise constructor
+ * autowire means we are telling spring if you are setting some property and if the bean is z
+ * then connect it automatically 
  * 
+ * autowire have two types 1 by name (id of the bean) and by type of bean.
+ * 
+ * by type we need to add primary attribute it will give preference to any one.
  */
 package com.yashasvi.BeanFactoryDemo;
 

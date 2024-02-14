@@ -4,25 +4,22 @@ public class Person {
 
 	private int age;
 
-	private Laptop laptop ;
+	private  Computer com ;
 	
 	
-	public Laptop getLaptop() {
-		return laptop;
+
+	public Computer getCom() {
+		return com;
 	}
 
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
+	public void setCom(Computer com) {
+		this.com = com;
 	}
 
-//	public Person() {
-//		System.out.print("in constructor ");
-//	}
-
-	public Person(int age) {
-		this.age=age;
+	public Person() {
+		System.out.print("in constructor ");
 	}
-	
+
 	public int getAge() {
 		return age;
 	}
@@ -33,6 +30,6 @@ public class Person {
 
 	public void Code() {
 		System.out.println("i am coding!");
-		laptop.compile();
+		com.complile();
 	}
 }

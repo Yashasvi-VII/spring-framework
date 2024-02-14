@@ -8,12 +8,13 @@
 
 	<!-- Bean declaration and other configurations -->
 
-	<bean id="person" class="com.yashasvi.BeanFactoryDemo.Person">
-		<constructor-arg value="12"></constructor-arg>
-		<property name="laptop" ref="Laptop"></property>
+	<bean id="person" class="com.yashasvi.BeanFactoryDemo.Person"
+		autowire="byType">
+		<property name="age" value="10"></property>
+		<!--	<property name="com" ref="Laptop"></property>  -->
 	</bean>
 
-	<bean id="Laptop" class="com.yashasvi.BeanFactoryDemo.Laptop">
+	<bean id="com" class="com.yashasvi.BeanFactoryDemo.Laptop" primary="true"> </bean>
 
-	</bean>
+	<bean id="Desktop" class="com.yashasvi.BeanFactoryDemo.Desktop"></bean>
 </beans> 
