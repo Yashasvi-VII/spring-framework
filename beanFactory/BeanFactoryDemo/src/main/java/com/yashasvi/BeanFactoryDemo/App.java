@@ -1,24 +1,12 @@
 /*
- * spring creates object even if we don't ask 
- * application context will simply create spring container for you, all the process happens in 
- * jvm and jvm will have a special container called spring container which will have spring beans
+ * Topic :- setter injection 
  * 
- * any class that has certain variables and every variable will have getters and setters is normally 
- * refereed as bean.
+ * In the bean tag we can use another tag called as property , if class is bean then every variable will
+ * be called as property.
  * 
- * spring not create new object it will give a new reference , see obj1 and obj2 both are referring to 
- * same object.
+ * first it will create the object and then will assign the age.
  * 
- * so we normally call all the beans as singleton beans. (object will be created only once)
- * 
- * To create multiple objects , we can do that using scopes in spring xml bean tag , by default 
- * scope is singleton, for multiple scope use prototype
- * 
- * prototype mean spring container will give new instance when ever we ask
- * 
- * but in singleton even if object is not asked spring will make object but prototype will not create
- *object when not asked.
- * 
+ * NOTE property name and set method name should be same.
  */
 package com.yashasvi.BeanFactoryDemo;
 
@@ -37,12 +25,6 @@ public class App {
 		Person obj1 = (Person) context.getBean("person");
 
 		obj1.Code();
-		obj1.age = 15;
-		System.out.println(obj1.age);
-
-		Person obj2 = (Person) context.getBean("person");
-
-		obj2.Code();
-		System.out.println(obj2.age);
+		System.out.println(obj1.getAge());
 	}
 }
