@@ -1,12 +1,7 @@
 /*
- * Topic :- setter injection 
+ * Topic :- Ref attribute 
  * 
- * In the bean tag we can use another tag called as property , if class is bean then every variable will
- * be called as property.
- * 
- * first it will create the object and then will assign the age.
- * 
- * NOTE property name and set method name should be same.
+ * in order to set the value of reference type use ref attribute.
  */
 package com.yashasvi.BeanFactoryDemo;
 

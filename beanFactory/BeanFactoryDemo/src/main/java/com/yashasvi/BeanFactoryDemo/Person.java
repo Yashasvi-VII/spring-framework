@@ -4,6 +4,17 @@ public class Person {
 
 	private int age;
 
+	private Laptop laptop ;
+	
+	
+	public Laptop getLaptop() {
+		return laptop;
+	}
+
+	public void setLaptop(Laptop laptop) {
+		this.laptop = laptop;
+	}
+
 	public Person() {
 		System.out.print("in constructor ");
 	}
@@ -18,5 +29,6 @@ public class Person {
 
 	public void Code() {
 		System.out.println("i am coding!");
+		laptop.compile();
 	}
 }

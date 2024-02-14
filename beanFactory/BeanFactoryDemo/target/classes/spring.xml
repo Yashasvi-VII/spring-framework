@@ -11,5 +11,10 @@
 	<bean id="person" class="com.yashasvi.BeanFactoryDemo.Person">
 
 		<property name="age" value="10"></property>
+		<property name="laptop" ref="Laptop"></property>
+	</bean>
+
+	<bean id="Laptop" class="com.yashasvi.BeanFactoryDemo.Laptop">
+
 	</bean>
 </beans> 
