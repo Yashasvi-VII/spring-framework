@@ -15,10 +15,14 @@ public class Person {
 		this.laptop = laptop;
 	}
 
-	public Person() {
-		System.out.print("in constructor ");
-	}
+//	public Person() {
+//		System.out.print("in constructor ");
+//	}
 
+	public Person(int age) {
+		this.age=age;
+	}
+	
 	public int getAge() {
 		return age;
 	}

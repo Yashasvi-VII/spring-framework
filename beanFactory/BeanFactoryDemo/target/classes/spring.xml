@@ -9,8 +9,7 @@
 	<!-- Bean declaration and other configurations -->
 
 	<bean id="person" class="com.yashasvi.BeanFactoryDemo.Person">
-
-		<property name="age" value="10"></property>
+		<constructor-arg value="12"></constructor-arg>
 		<property name="laptop" ref="Laptop"></property>
 	</bean>
 

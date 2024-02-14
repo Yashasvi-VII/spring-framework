@@ -1,7 +1,8 @@
 /*
- * Topic :- Ref attribute 
+ * Topic :- Constructor injection  
  * 
- * in order to set the value of reference type use ref attribute.
+ * setter injection simply means when we use property other wise constructor
+ * 
  */
 package com.yashasvi.BeanFactoryDemo;
 
