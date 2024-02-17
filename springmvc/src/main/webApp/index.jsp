@@ -8,5 +8,11 @@
 </head>
 <body>
 Welcome yashasvi
+
+<form action="add">
+Enter 1st Number : <input type="text" name="Number 1"> <br>
+Enter 2nd Number : <input type="text" name="Number 2"> <br>
+<input type="submit">
+</form>
 </body>
 </html>
