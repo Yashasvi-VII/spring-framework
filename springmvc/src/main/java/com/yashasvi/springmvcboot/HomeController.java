@@ -10,6 +10,8 @@
  *
  *Home controller is called by dispatcher servlet so its job of the dispatcher servlet to call the actual page.
  *so we just need to inform which page we need to call
+ *
+ *added Tomcat Jasper which converts jsp to servlets.
 */
 
 package com.yashasvi.springmvcboot;
