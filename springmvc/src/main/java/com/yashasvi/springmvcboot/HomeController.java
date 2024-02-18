@@ -1,14 +1,20 @@
 /*
- * Concept of model and view 
+ * Concept:- prefix and suffix 
  * 
- * we can remove the HttpSession using model and view
+ * anyone can access webApp files so to secure the files we can keep the files in webIner which is private and can only be accessed 
+ * by controller
  * 
- * model will have data thirdValue is the data so we just need to put this value in model object and also we need to specify the view 
- * here view is result.jsp .
+ * we have to inform dispatcher servlet that whenever you are looking for the view go to views folder 
+ * in application.properties folder.
  * 
- * we have inbuilt class model and view 
+ * If we want to assign path and the extension we have to use prefix and suffix 
  * 
- * instead of returning the string we can return the mv and we need to change the return type to model and view 
+ * go to https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
+ * search for spring mvc look for spring.mvc.view.prefix and suffix
+ * 
+ * prefix is what before result and suffix is what after the result.
+ * 
+ * so we have removed the .jsp extension from the code and put that another folder
 */
 
 package com.yashasvi.springmvcboot;
@@ -40,7 +46,7 @@ public class HomeController {
 		
 		// session.setAttribute("thirdValue", thirdValue);
 		mv.addObject("thirdValue", thirdValue);
-		mv.setViewName("result.jsp");
+		mv.setViewName("result");
 		
 		return mv;
 	}
