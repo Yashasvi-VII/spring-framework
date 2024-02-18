@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Result is : ${thirdValue}
+Result is : ${person}
 </body>
 </html>
