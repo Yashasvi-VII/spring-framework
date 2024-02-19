@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.yashasvi.entity.Employee;
 
-public interface EmployeeRespository extends JpaRepository<Employee,Integer>{
+public interface EmployeeRespository extends JpaRepository<Employee, Integer> {
 
 }
