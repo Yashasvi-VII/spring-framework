@@ -43,4 +43,23 @@ public class EmployeeServiceImpl implements EmployeeService {
 		}
 	}
 
+	@Override
+	public Employee updateEmployee(Employee employee, int id) {
+
+		// check if employee exists in database or not
+		// this is lambda expression
+		Employee existingEmployee = employeeRepository.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("Employee", "Id", id));
+
+		existingEmployee.setFirstName(employee.getFirstName());
+		existingEmployee.setLastName(employee.getLastName());
+		existingEmployee.setEmail(employee.getEmail());
+
+		// save existing employee to db
+		employeeRepository.save(existingEmployee);
+
+		// return existingEmployee to controller
+		return existingEmployee;
+	}
+
 }
