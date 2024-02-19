@@ -10,6 +10,9 @@ import com.yashasvi.entity.Employee;
 public interface EmployeeService {
 
 	Employee saveEmployee(Employee employee);
-    List<Employee> getAllEmployees();
-	
+
+	List<Employee> getAllEmployees();
+
+	Employee getEmployeeById(int id);
+
 }
